@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='flex flex-col gap-10 items-center justify-center bg-white h-screen dark:bg-black'>
+    <div className='flex flex-col gap-10 items-center justify-center bg-white h-screen w-full dark:bg-black'>
       <h1 className='font-extrabold font-cursive text-2xl text-slate-500 dark:text-gray-300'>🙏 Thank you for visiting WatchBox 🙏</h1>
       <video
         src="/assets/thankyou.mp4"

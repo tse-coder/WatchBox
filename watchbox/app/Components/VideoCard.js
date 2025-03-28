@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { calculatedDate, calculatedNumber } from '../operation'
 
-const VideoCard = ({videoId,channelId,channelTitle,description,publishedAt,thumbnail,title,formatedDate}) => {
+const VideoCard = ({videoId,channelId,channelTitle,description,publishedAt,thumbnail,title,viewCount}) => {
   return (
     <div className='w-70 md:w-90 dark:text-gray-200'>
         <Link href={`/video/${videoId}`} as={`/video/${videoId}`}>
@@ -20,7 +20,7 @@ const VideoCard = ({videoId,channelId,channelTitle,description,publishedAt,thumb
             <div>
                 <p className='text-md font-semibold'>{title.length>60?title.substring(0,60)+" . . .":title}</p>
                 <p className='text-sm'>{channelTitle}</p>
-                <p className='text-sm '>{calculatedNumber(123221323)} &bull; {calculatedDate(publishedAt)}</p>
+                <p className='text-sm '>{viewCount>=0 && calculatedNumber(viewCount)} &bull; {calculatedDate(publishedAt)}</p>
             </div>
         </div>
         

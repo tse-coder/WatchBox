@@ -8,10 +8,6 @@ const categories = [
       name: "News",
       icon: "/assets/news.svg"
     },{
-      id: "27",
-      name: "Education",
-      icon: "/assets/education.svg"
-    },{
       id: "24",
       name: "Entertainment",
       icon: "/assets/entertainment.svg"
