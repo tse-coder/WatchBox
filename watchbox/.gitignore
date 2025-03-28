@@ -1,0 +1,39 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.cjs
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+/build/
+
+# production
+/public/.next
+
+# system files
+.DS_Store
+Thumbs.db
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Editor/IDE specific files
+.idea
+.vscode/
+*.swp
+*.swo
+*~
+.cache/

@@ -5,7 +5,7 @@ export async function GET(req) {
   const category = searchParams.get("category");
   const videoId = searchParams.get("id");
 
-  const apiKey =;
+  const apiKey = process.env.API_KEY;
  
   try {
     let response;

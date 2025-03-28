@@ -24,7 +24,7 @@ const Video = ({expanded,setExpanded,category}) => {
   }
   return (
     
-    <div className={`${expanded?"pl-58":"pl-18"} flex flex-wrap gap-4 mt-5 justify-center`}>
+    <div className={`${expanded?"md:pl-58":"md:pl-18"} flex flex-wrap gap-4 pt-5 justify-center dark:bg-black h-fit`}>
         {vids.length!=0?
         vids.map((vid,i)=>{
           const {channelId,channelTitle,description,publishedAt,thumbnails,title} = vid.snippet;

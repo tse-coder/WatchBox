@@ -9,8 +9,8 @@ const RelatedVidSkeleton = () => {
     
     
     <div className='flex flex-col gap-2'>
-        <p className='h-3 w-40 lg:50 xl:65 bg-gray-400 rounded-full'></p>
-        <p className='h-3 w-30 bg-gray-400 rounded-full'></p>
+        <p className='h-3 w-40 lg:w-50 lg:50 xl:65 bg-gray-400 rounded-full'></p>
+        <p className='h-3 w-40 bg-gray-400 rounded-full'></p>
         <p className='h-3 w-30 bg-gray-400 rounded-full'></p>
     </div>
 </div>
