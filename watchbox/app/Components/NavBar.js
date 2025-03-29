@@ -38,10 +38,10 @@ export default function Navbar() {
         <p className="impact_logo text-gray-600 text-xl dark:text-white">Watchbox</p>
       </div>
       <div>
-        <div id="search_area" className="lg:flex hidden absolute lg:static w-full lg:w-auto border border-gray-300 rounded-full px-2 overflow-hidden dark:border-gray-500">
+        <div id="search_area" className="lg:flex hidden absolute top-3 left-1/10 lg:static w-4/5 lg:w-auto border border-gray-300 rounded-full px-2 overflow-hidden bg-white dark:bg-black dark:border-gray-500">
           <input id="search" placeholder="search here ..." onChange={(e)=>{
             setSearchValue(e.target.value)
-          }} className="bg-transparent mr-3 text-gray-600 focus:outline-none pl-5 h-10  dark:text-white dark:placeholder-gray-100" />
+          }} className="flex-1 bg-transparent mr-3 text-gray-600 focus:outline-none pl-5 h-10  dark:text-white dark:placeholder-gray-100" />
           
           <Link href="/" className="flex items-center">
           <img 
@@ -61,7 +61,7 @@ export default function Navbar() {
             src = "/assets/search.svg"
             width = {30}
             alt = "search_icon"
-            className="dark:invert cursor-pointer"
+            className="dark:invert cursor-pointer lg:hidden"
             onClick={(e)=>{
               e.target.style.display = "none"
               document.getElementById("search_area").style.display = "flex"

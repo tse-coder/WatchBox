@@ -57,10 +57,12 @@ export default function page() {
                     </p>
 
                     <div className='flex flex-col sm:flex-row justify-between items-center gap-3'>
-                        <img src={currentChannel.thumbnails.high.url} className='size-20 md:size-10 rounded-full' />
-                        <p className='text-base sm:text-lg'>{currentVideo.channelTitle}</p>
-
+                        <div className='flex items-center gap-3'>
+                            <img src={currentChannel.thumbnails.high.url} className='size-20 md:size-10 rounded-full' />
+                            <p className='text-base sm:text-lg'>{currentVideo.channelTitle}</p>        
+                        </div>
                         <div className='flex items-center gap-3 sm:gap-5 font semi-bold'>
+                            
                             <button className='bg-gray-600 text-white py-2 px-4 sm:px-5 rounded-full text-sm sm:text-md dark:bg-gray-100 dark:text-black w-full sm:w-auto text-center'>
                                 Subscribe
                             </button>
@@ -81,7 +83,7 @@ export default function page() {
                                 </button>
                             </div>
 
-                            <button className='p-2  rounded-full border border-gray-300 bg-gray-100 flex items-center gap-2 bg-transparent font-semibold'>
+                            <button className='p-2 px-4  rounded-full border border-gray-300 bg-gray-100 flex items-center gap-2 bg-transparent font-semibold'>
                                 <svg width="20" height="20" viewBox="0 0 122.88 98.86">
                                     <g><path fill="currentColor" d="M122.88,49.43L73.95,98.86V74.23C43.01,67.82,18.56,74.89,0,98.42c3.22-48.4,36.29-71.76,73.95-73.31l0-25.11 L122.88,49.43L122.88,49.43z" /></g>
                                 </svg>
